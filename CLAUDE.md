@@ -1,116 +1,112 @@
 # CLAUDE.md — Kausan IT Learning
 
-## Project Purpose
+## 專案目的
 
-A structured IT technical training documentation library for Kausan IT personnel.
-The goal is to progressively raise IT operational maturity from Level 1 to Level 5 (L1–L5),
-targeting ISO 27001 certification readiness by mid-2026.
+本專案是 Kausan IT 部門的技術培訓文件庫，目標是透過 L1–L5 成熟度框架，逐步提升 IT 營運能力，並於 2026 年中完成 ISO 27001 認證準備。
 
-Training is driven by an **Operational-First** strategy:
-> 以不中斷、不爆炸為核心，逐層提升IT品質
-> ("No outages, no explosions — build quality layer by layer")
+培訓策略：**營運優先（Operational-First）**
+> 以不中斷、不爆炸為核心，逐層提升 IT 品質
 
-Priority context (as of 2026-Q1):
-- 1 IT staff covering ~5 roles (205% overload)
-- 90% risk of critical system failure within 3 months
-- ISO 27001 certification window: February–June 2026
+**2026 Q1 關鍵背景：**
+- 1 名 IT 人員承擔約 5 人份工作（負載 205%）
+- 核心系統 3 個月內故障風險達 90%
+- ISO 27001 認證窗口：2–6 月（剩 4 個月）
 
 ---
 
-## Tech Stack
+## 技術堆疊
 
-This is a **documentation-only project** — no application code, no runtime dependencies.
+本專案為**純文件專案**，無應用程式碼，無執行環境依賴。
 
-| Tool | Purpose |
-|------|---------|
-| Markdown (`.md`) | All training materials and guides |
-| Git | Version control for documents (see `L5_資訊治理與合規/Git_Documentation_Version_Control_Guide.md`) |
-| GitHub/GitLab (implied) | Remote hosting and review workflow |
+| 工具 | 用途 |
+|------|------|
+| Markdown（`.md`） | 所有培訓教材與操作指南 |
+| Git | 文件版本控制（參見 `L5_資訊治理與合規/Git_Documentation_Version_Control_Guide.md`） |
+| GitHub | 遠端儲存與協作審閱 |
 
 ---
 
-## Key Commands
+## 常用指令
 
-There is no build, test, or lint pipeline. The following commands are useful for
-working with this documentation repository.
+本專案無建置、測試或 lint 流水線，以下為文件管理常用指令。
 
-### Markdown linting (optional)
+### Markdown 語法檢查（選用）
 ```bash
-# Install markdownlint-cli if not present
+# 安裝 markdownlint-cli
 npm install -g markdownlint-cli
 
-# Lint all Markdown files
+# 檢查所有 Markdown 檔案
 markdownlint "**/*.md"
 ```
 
-### Git workflow
+### Git 工作流程
 ```bash
-# Stage and commit updated docs
-git add <file>
-git commit -m "docs: <brief description>"
+# 暫存並提交更新的文件
+git add <檔案>
+git commit -m "docs: <簡短說明>"
 
-# Check document change history
-git log --oneline -- <file>
+# 查看特定文件的異動歷程
+git log --oneline -- <檔案>
 ```
 
-### Search across all documents
+### 全文搜尋
 ```bash
-# Find keyword across all .md files (Unix)
-grep -r "keyword" --include="*.md" .
+# 在所有 .md 檔案中搜尋關鍵字
+grep -r "關鍵字" --include="*.md" .
 ```
 
 ---
 
-## Framework: L1–L5 Operational Maturity Levels
+## L1–L5 營運成熟度框架
 
-Defined in [L1-L5_營運優先層級框架.md](L1-L5_營運優先層級框架.md).
+完整定義參見 [L1-L5_營運優先層級框架.md](L1-L5_營運優先層級框架.md)。
 
 ```
-L5: Documentation & Compliance      ← Final acceptance layer
+L5: 文件與合規        ← 最終驗收層（ISO 27001）
      ↑
-[Evidence automation pipeline]      ← Bridge: auto-generate registers
+[證據自動化流水線]    ← 橋接層：自動生成稽核登記簿
      ↑
-L4: Tools & Automation              ← Accelerate delivery, reduce toil
-L3: User Experience                 ← Reduce friction for end-users
-L2: Defense & Monitoring            ← Signals when things go wrong
-L1: Reliability & Disaster Recovery ← Foundation: no outages, no data loss
+L4: 工具與自動化      ← 加速交付、減少人工浪費
+L3: 使用者體驗        ← 降低摩擦、提升服務順暢度
+L2: 防禦與監控        ← 出事有訊號、能快速應對
+L1: 可靠性與容災      ← 基礎：不中斷、不爆炸（DR/HA）
 ```
 
 ---
 
-## Important Files & Folders
+## 重要檔案與資料夾
 
-### Root-level documents
+### 根目錄文件
 
-| File | Description |
-|------|-------------|
-| [Plan.md](Plan.md) | Master implementation checklist (tracks completion of all L1–L5 materials) |
-| [L1-L5_營運優先層級框架.md](L1-L5_營運優先層級框架.md) | Full framework definition with maturity levels, KPIs, and ISO 27001 mappings |
-| [Training_Schedule_2026Q1-Q2.md](Training_Schedule_2026Q1-Q2.md) | Q1–Q2 training schedule with priority tiers (P0/P1/P2), hours, and budget |
-| [Technical_Glossary.md](Technical_Glossary.md) | Unified glossary of IT terms (bilingual: Chinese/English) |
-| [IT Service Catalog_服務語言版.md](IT%20Service%20Catalog_服務語言版.md) | IT service catalog in Chinese |
+| 檔案 | 說明 |
+|------|------|
+| [Plan.md](Plan.md) | 實作待辦清單，追蹤 L1–L5 文件完成進度 |
+| [L1-L5_營運優先層級框架.md](L1-L5_營運優先層級框架.md) | 框架全文，含成熟度指標、KPI 與 ISO 27001 對照 |
+| [Training_Schedule_2026Q1-Q2.md](Training_Schedule_2026Q1-Q2.md) | Q1–Q2 培訓時程，含 P0/P1/P2 優先級、時數與預算 |
+| [Technical_Glossary.md](Technical_Glossary.md) | 技術詞彙表（繁中／英對照） |
+| [IT Service Catalog_服務語言版.md](IT%20Service%20Catalog_服務語言版.md) | IT 服務目錄（中文版） |
 
-### Training material folders
+### 培訓材料資料夾
 
-| Folder | Layer | Contents |
-|--------|-------|---------|
-| [L1_可靠性與容災/](L1_可靠性與容災/) | L1 | DR/BCP business continuity training |
-| [L1_可靠性與災難復原/](L1_可靠性與災難復原/) | L1 | Backup verification guide |
-| [L2_防禦與監控/](L2_防禦與監控/) | L2 | Firewall/network segmentation, incident response SOP, vulnerability management, Wazuh SIEM operations |
-| [L3_使用者體驗/](L3_使用者體驗/) | L3 | IAM account management manual |
-| [L5_文件與合規/](L5_文件與合規/) | L5 | ISO 27001 internal audit guide |
-| [L5_資訊治理與合規/](L5_資訊治理與合規/) | L5 | Git documentation & version control guide |
+| 資料夾 | 層級 | 內容 |
+|--------|------|------|
+| [L1_可靠性與容災/](L1_可靠性與容災/) | L1 | DR/BCP 業務連續性培訓 |
+| [L1_可靠性與災難復原/](L1_可靠性與災難復原/) | L1 | 備份驗證指南 |
+| [L2_防禦與監控/](L2_防禦與監控/) | L2 | 防火牆與網路分段、事件回應 SOP、弱點管理、Wazuh SIEM 操作 |
+| [L3_使用者體驗/](L3_使用者體驗/) | L3 | IAM 帳號管理手冊 |
+| [L5_文件與合規/](L5_文件與合規/) | L5 | ISO 27001 內部稽核指南 |
+| [L5_資訊治理與合規/](L5_資訊治理與合規/) | L5 | Git 文件版本控制指南 |
 
-### Missing / incomplete (per Plan.md)
+### 尚未建立（依 Plan.md）
 
-- **L4 folder** — Tools & Automation materials not yet created
-- Cross-cutting materials: technical debt management, career development path, troubleshooting scenarios
+- **L4 資料夾** — 工具與自動化培訓文件尚未建立
+- 跨領域材料：技術債管理、職涯發展路徑、常見故障排查情境
 
 ---
 
-## Conventions
+## 文件慣例
 
-- All documents are bilingual (Traditional Chinese primary, English secondary) unless noted.
-- Document headers include version, last-updated date, and owner fields.
-- ISO 27001 control mappings are noted inline where applicable.
-- Maturity levels use a 1–5 scale; current baseline is ~1.5, target for 2026 Q1–Q2 is 2.5–3.0.
+- 語言：繁體中文為主，英文為輔；非特別標注均為雙語格式
+- 每份文件標頭包含：版本號、最後更新日期、負責人
+- 適用處標注對應的 ISO 27001 控制項
+- 成熟度評分採 1–5 分制；目前基準約 1.5，2026 Q1–Q2 目標為 2.5–3.0
