@@ -21,12 +21,12 @@
 
 | 技能項目 | 狀態 | 文件連結 |
 |---------|------|---------|
-| 各類印表機安裝 SOP（租賃事務機、HP、EPSON、TSC、SATO、OI 伺服器） | ✅ | [Printer_Installation_Guide.md](Printer_Installation_Guide.md) |
-| 找不到印表機 IP（工廠多台同型號） | ✅ | [Printer_Installation_Guide.md #第2章](Printer_Installation_Guide.md#2-找不到印表機-ip-怎麼辦) |
+| 各類印表機安裝 SOP（租賃事務機、HP、EPSON、TSC、SATO、OI 伺服器） | ✅ | [印表機安裝指南.md](印表機安裝指南.md) |
+| 找不到印表機 IP（工廠多台同型號） | ✅ | [印表機安裝指南.md #第2章](印表機安裝指南.md#2-找不到印表機-ip-怎麼辦) |
 | 找不到精確驅動時的替代安裝（Port 9100/RAW/LPR、通用驅動） | ✅ | [找不到精確驅動的安裝方法.md](找不到精確驅動的安裝方法.md) |
 | 紙張尺寸設定（A4/Letter/中一刀/標籤尺寸校正） | ✅ | [印表機紙張尺寸設定指南.md](印表機紙張尺寸設定指南.md) |
 | 印表機權限管理（多用戶、系統印表機 vs 用戶印表機） | ✅ | [印表機權限管理說明.md](印表機權限管理說明.md) |
-| 人員調動重新安裝（IP 更換） | ✅ | [Printer_Installation_Guide.md #第10章](Printer_Installation_Guide.md#10-人員調動--重新安裝本地印表機) |
+| 人員調動重新安裝（IP 更換） | ✅ | [印表機安裝指南.md #第10章](印表機安裝指南.md#10-人員調動--重新安裝本地印表機) |
 | 標籤機耗材更換（色帶、標籤紙捲） | 📋 待補充 | |
 | 印表機定期保養與清潔 SOP | 📋 待補充 | |
 
